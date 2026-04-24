@@ -1,7 +1,7 @@
 
-  # Create Page from Design
+  # hi-ozon 2026
 
-  This is a code bundle for Create Page from Design. The original project is available at https://www.figma.com/design/HjgwyYzVpsiOHzfiBE9x7u/Create-Page-from-Design.
+  This is a code bundle for Create Page from Design. The original project is available at https://www.figma.com/design/HjgwyYzVpsiOHzfiBE9x7u
 
   ## Running the code
 
