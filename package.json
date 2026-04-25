@@ -1,9 +1,9 @@
 {
-  "name": "@figma/my-make-file",
+  "name": "@figma/hi-ozonbank",
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://mfd.github.io/hi-ozon/",
+  "homepage": "https://mfd.github.io/hi-ozonbank/",
   "scripts": {
     "build": "vite build",
     "dev": "vite",

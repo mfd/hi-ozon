@@ -7,10 +7,10 @@ export default function App() {
   return (
     <>
       {/* Desktop Version */}
-      <div className="hidden lg:flex bg-white flex-col items-center justify-center px-[32px] py-[96px] relative min-h-full">
+      <div className="hidden lg:flex bg-white flex-col items-center justify-center px-[32px] py-[72px] relative min-h-full">
         <div className="flex items-start gap-[24px] relative w-[1140px]">
           <Main />
-          <div className="flex flex-col gap-[24px] items-start pb-[32px] sticky top-[96px] w-[267px]">
+          <div className="flex flex-col gap-[16px] items-start pb-[32px] sticky top-[72px] w-[267px]">
             <Right />
           </div>
         </div>

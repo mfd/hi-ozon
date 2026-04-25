@@ -166,17 +166,13 @@ export default function Main() {
               </p>
             </div>
             <div className="flex flex-col justify-center text-[0px] w-full">
-              <p className="text-[20px]">
-                <span className="leading-[32px]">
+              <p className="text-[20px] leading-[32px]">
                   Меня зовут Камиль, я работаю ведущим
                   продуктовым дизайнером в Альфа‑Банке,
                   мне очень близка тема дизайн-систем
                   и разработки, поэтому хочу откликнуться,
                   на вакансию&nbsp;
-                </span>
-                <span className="leading-[32px] not-italic font-bold">
-                  Продуктового дизайнера дизайн-системы
-                </span>
+                  <strong>Продуктового дизайнера дизайн-системы</strong>
               </p>
             </div>
           </div>
@@ -192,6 +188,11 @@ export default function Main() {
           <div className="flex flex-col gap-[12px] items-center w-[849px]">
             <div className="flex flex-col justify-center leading-[0] min-w-full not-italic text-[#1f1f1f] text-[20px] w-[min-content]">
               <ul className="space-y-[12px]">
+                <li className="list-disc ms-[30px]">
+                  <span className="leading-[32px]">
+                    Figma: variants, auto layout, variables, libraries, branches, memory optimization, figma mcp
+                  </span>
+                </li>
                 <li className="list-disc ms-[30px]">
                   <span className="leading-[32px]">
                     Сфокусирован на точности реализации:
@@ -228,16 +229,6 @@ export default function Main() {
                   </span>
                 </li>
               </ul>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="-scale-y-100 flex-none">
-                <div className="h-0 relative w-[660px]">
-                  <div
-                    aria-hidden="true"
-                    className="absolute border-[#ebebeb] border-b border-solid inset-0 pointer-events-none"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
