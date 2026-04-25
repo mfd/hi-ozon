@@ -1,20 +1,4 @@
-interface ContactLinkProps {
-  href: string;
-  children: React.ReactNode;
-}
-
-function ContactLink({ href, children }: ContactLinkProps) {
-  return (
-    <a
-      className="block cursor-pointer decoration-solid leading-[32px] text-[20px] underline text-[#1f1f1f]"
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
-  );
-}
+import { Button } from "./Button";
 
 interface ContactItemProps {
   label: string;
@@ -28,9 +12,7 @@ function ContactItem({ label, children }: ContactItemProps) {
         <p className="leading-[32px]">{label}</p>
       </div>
       <div className="flex gap-[4px] items-center justify-center">
-        <div className="flex flex-col justify-center leading-[0] not-italic text-[#1f1f1f] text-[0px] whitespace-nowrap">
-          {children}
-        </div>
+        {children}
       </div>
     </div>
   );
@@ -49,9 +31,7 @@ function ContactItemFullWidth({ label, children }: ContactItemFullWidthProps) {
           <p className="leading-[32px]">{label}</p>
         </div>
         <div className="flex gap-[4px] items-center justify-center">
-          <div className="flex flex-col justify-center leading-[0] not-italic text-[#1f1f1f] text-[0px] whitespace-nowrap">
-            {children}
-          </div>
+          {children}
         </div>
       </div>
     </div>
@@ -64,32 +44,32 @@ export default function MobileContactLinks() {
       {/* Row 1: Resume & Portfolio */}
       <div className="flex gap-[16px] items-start w-full">
         <ContactItem label="Resume:">
-          <ContactLink href="https://drive.google.com/file/d/1lwLDIsFsPkCB4fV_pA51vrxF_OifP2N4/view">
+          <Button href="https://drive.google.com/file/d/1lwLDIsFsPkCB4fV_pA51vrxF_OifP2N4/view">
             Download CV
-          </ContactLink>
+          </Button>
         </ContactItem>
         <ContactItem label="Portfolio:">
-          <ContactLink href="https://drive.google.com/file/d/1ghRI7AXcYDnfbW4NLPCToPiU8FIJRB67/view">
+          <Button href="https://drive.google.com/file/d/1ghRI7AXcYDnfbW4NLPCToPiU8FIJRB67/view">
             Design Portfolio
-          </ContactLink>
+          </Button>
         </ContactItem>
       </div>
 
       {/* Row 2: LinkedIn & Github */}
       <div className="flex gap-[16px] items-start w-full">
         <ContactItem label="LinkedIn:">
-          <ContactLink href="https://www.linkedin.com/in/kashaev/">
+          <Button href="https://www.linkedin.com/in/kashaev/">
             @kashaev
-          </ContactLink>
+          </Button>
         </ContactItem>
         <ContactItem label="Github">
-          <ContactLink href="https://github.com/mfd">@mfd</ContactLink>
+          <Button href="https://github.com/mfd">@mfd</Button>
         </ContactItem>
       </div>
 
       {/* Row 3: Telegram (Full Width) */}
       <ContactItemFullWidth label="Telegram:">
-        <ContactLink href="https://t.me/kashaev">@kashaev</ContactLink>
+        <Button href="https://t.me/kashaev">@kashaev</Button>
       </ContactItemFullWidth>
     </div>
   );

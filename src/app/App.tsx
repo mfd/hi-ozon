@@ -2,8 +2,16 @@ import Main from "./components/Main";
 import MobileMain from "./components/MobileMain";
 import MobileProfile from "./components/MobileProfile";
 import Profile from "./components/Profile";
+import UIFigmaPage from "./ui-figma";
 
 export default function App() {
+  const pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const isUiFigmaRoute = pathname === "/ui-figma" || pathname.endsWith("/ui-figma");
+
+  if (isUiFigmaRoute) {
+    return <UIFigmaPage />;
+  }
+
   return (
     <>
       {/* Desktop Version */}

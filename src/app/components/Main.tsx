@@ -1,34 +1,7 @@
 import { Lightbox, useLightbox } from "./Lightbox";
 import { Button } from "./Button";
+import { Gallery } from "./Gallery";
 import { desktopCasesDataSm, desktopCasesDataFull } from "../../constants/cases";
-
-interface GalleryProps {
-  images: string[];
-  onImageClick: (index: number) => void;
-}
-
-function Gallery({ images, onImageClick }: GalleryProps) {
-  return (
-    <div className="flex gap-[16px] items-center">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className="bg-[#f7f7f7] flex flex-col h-[86px] items-start relative shrink-0 w-[153px] cursor-pointer"
-          onClick={() => onImageClick(index)}
-        >
-          <div className="h-full overflow-clip relative w-full">
-            <img
-              alt=""
-              className="absolute inset-0 max-w-none object-cover size-full"
-              src={image}
-            />
-          </div>
-          <div className="absolute bg-[rgba(0,0,0,0.02)]" />
-        </div>
-      ))}
-    </div>
-  );
-}
 
 interface CaseItemProps {
   title: string;
@@ -130,7 +103,12 @@ function CaseItem({
       </div>
 
       {showGallery && (
-        <Gallery images={images} onImageClick={(index) => onImageClick(index)} />
+        <Gallery
+          images={images}
+          onImageClick={(index) => onImageClick(index)}
+          containerClassName="flex gap-[16px] items-center"
+          overlayClassName="bg-[rgba(0,0,0,0.02)]"
+        />
       )}
 
       {showBorder && (

@@ -1,5 +1,5 @@
 // Import image mappings
-import { imageMapSm, imageMapFull } from "./casesImg";
+import { imageMapSm, imageMapFull, imageMapPoster } from "./casesMedia";
 
 // Import JSON data
 import casesDataRaw from "./cases.json";
@@ -19,6 +19,7 @@ export interface CaseData {
   goal?: string;
   solution?: string;
   images: string[];
+  posters?: string[];
   showBorder?: boolean;
   showGallery?: boolean;
 }

@@ -38,7 +38,7 @@
     "title": "Text2Layers, плагин для Figma для сборки контентных страниц",
     "githubUrl": "https://github.com/mfd/text2layers",
     "githubButtonText": "Github",
-    "goal": "Увеличить TimeToMarket сборки типовых продуктовых и контентных страниц на сайте alfabank.ru",
+    "goal": "Сократить TimeToMarket сборки типовых продуктовых и рекламных страниц на сайте alfabank.ru",
     "solution": "Плагин для обработки контента из Google Docs (Microsoft Word) в компоненты Figma",
     "images": ["imgPlugin1"],
     "showBorder": false

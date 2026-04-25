@@ -25,14 +25,14 @@ import imgOzon1_full from "../imports/_cases/ozonfin1.png";
 import imgOzon2_sm from "../imports/_cases/ozonfin2_sm.png";
 import imgOzon2_full from "../imports/_cases/ozonfin2.png";
 
-// Video case
+// AlfaVideo case
 import imgAlfaVideo1_sm from "../imports/_cases/alfavideo1_sm.png";
 import imgAlfaVideo1_full from "../imports/_cases/alfavideo1.png";
 import imgAlfaVideo2_sm from "../imports/_cases/alfavideo2_sm.png";
 import imgAlfaVideo2_full from "../imports/_cases/alfavideo2.png";
-import imgAlfaVideo3_sm from "../imports/_cases/alfavideo3_sm.png";
-import imgAlfaVideo3_full from "../imports/_cases/alfavideo3.png";
-
+import imgAlfaVideo3_sm from "../imports/_cases/alfavideo3_sm.gif";
+import imgAlfaVideo3_full from "../imports/_cases/alfavideo3.mp4";
+import imgAlfaVideo3_poster from "../imports/_cases/alfavideo3_poster.jpg";
 
 // Plugin case
 import imgPlugin1_sm from "../imports/_cases/plg1.gif";
@@ -72,4 +72,9 @@ export const imageMapFull: Record<string, string> = {
   imgAlfaVideo2: imgAlfaVideo2_full,
   imgAlfaVideo3: imgAlfaVideo3_full,
   imgPlugin1: imgPlugin1_full,
+};
+
+// Unified image mapping for video posters
+export const imageMapPoster: Record<string, string> = {
+  imgAlfaVideo3: imgAlfaVideo3_poster,
 };
